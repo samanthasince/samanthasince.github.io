@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MENU - CAFE FABA</title>
+    <link rel="stylesheet" href="css/newmenu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script/menu.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();   
+		});
+    </script>
+
+</head>
+<body>
+    <div class="header">Order To Go: 720.555.1212</div>
+    <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="orderBean.html">BEAN</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="coffee.html">COFFEE ART</a></li>
+                <li class="parent"><a href="">ABOUT</a>
+                    <ul class="child">
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="review.html">CUSTOMER REVIEW</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li style="float:right; padding-left: 10px"><a class="fa fa-shopping-cart" style="font-size:20px;" href="cart.html"></a></li>
+            </ul>
+        </nav>
+	<div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="home.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="orderBean.html">BEAN</a>
+        <a href="coffee.html">COFFEE ART </a>
+        <a href="about.html">ABOUT</a>
+        <a href="review.html">REVIEW</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="cart.html">CART</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>  
+    <figure><img height="180" src="images/cafe.png" alt="cafeLogo" width="160"></figure>
+    <header>
+        GREAT COFFEE FOR GREAT PEOPLE
+    </header>
+    <main>
+    <div class="container3">
+            <img class="img" style="width:100%;height:160px;"  src="images/banner1.jpg" alt="foodPic">
+            <div class="centered" style="color:black;">CAFE FABA MENU </div>
+    </div>
+    <div class="container" style="margin-top:2%;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 style="border-top:none;">Fresh Organic Brew</h2>
+                <p style="font-style:italic;">Our beans are ethically sourced. Brewed fresh for you.</p>
+            </div>
+        </div>
+  
+        <div class="row">
+				<a onclick="item(1)">
+                <div class="col-sm-4">
+                    <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Espresso Macchiato</h3>
+                    <p class="description">Our espresso with a dollop of steamed milk</p>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="drink">3.75</h3>
+                </div>
+				</a>
+				<a onclick="item(2)">
+                <div class="col-sm-4">
+                        <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Italian Cappuccino</h3>
+                        <p class="description">An authentic cappuccino with sugar and spice infused espresso</p>
+                    </div>
+                    <div class="col-sm-2">
+                            <h3 class="drink">4.75</h3>
+                    </div>
+				</a>
+        </div>
+    
+            <div class="row">
+				<a onclick="item(3)">
+                    <div class="col-sm-4">
+                        <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Spanish Latte</h3>
+                        <p class="description">Sweet, reamy caffe latte inspired by the taste of Ibiza</p>
+                    </div>
+                    <div class="col-sm-2">
+                            <h3 class="drink">5.25</h3>
+                    </div>
+				</a>
+				<a onclick="item(4)">
+                    <div class="col-sm-4">
+                            <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Minty Blended Mocha</h3>
+                            <p class="description">Mint flavor, coconut whip cream, and organic dark chocolatey goodness</p>
+                        </div>
+                        <div class="col-sm-2">
+                                <h3 class="drink">5.5</h3>
+                        </div>
+				</a>
+            </div>
+     
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Natural Organic Leaf Tea</h2>
+                        <p style="font-style:italic;">Our exquisite tea leaves are full of rich flavor. Handpicked just for you.</p>
+                    </div>
+                </div>
+ 
+                <div class="row">
+					<a onclick="item(5)">
+                        <div class="col-sm-4">
+                            <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Hot Loose Leaf Tea</h3>
+                            <p class="description">We have a variety of loose leaf teas that can be enjoyed alone or paired together</p>
+                        </div>
+                        <div class="col-sm-2">
+                                <h3 class="drink">3.5</h3>
+                        </div>
+					</a>
+					<a onclick="item(6)">
+                        <div class="col-sm-4">
+                                <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Green Tea Americano</h3>
+                                <p class="description">Created with organic green tea</p>
+                            </div>
+                            <div class="col-sm-2">
+                                    <h3 class="drink">4</h3>
+                            </div>
+					</a>
+                </div>
+            
+                    <div class="row">
+						<a onclick="item(7)">
+                            <div class="col-sm-4">
+                                <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Chai Spice Latte</h3>
+                                <p class="description">Malty herbal chai tea prepared with steamed milk and agave nectar. </p>
+                            </div>
+                            <div class="col-sm-2">
+                                    <h3 class="drink">4.5</h3>
+                            </div>
+							</a>
+							<a onclick="item(8)">
+                            <div class="col-sm-4">
+                                    <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Thai Tea Latte</h3>
+                                    <p class="description">Organic thai tea with steamed milk or over ice. </p>
+                                </div>
+                                <div class="col-sm-2">
+                                        <h3 class="drink">4.75</h3>
+                                </div>
+						</a>
+                    </div>
+ 
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Mid-Day Cravings</h2>
+                                <p style="font-style:italic;">Delicious farm to table meals to help you through the day. Hand crafted for you.</p>
+                            </div>
+                        </div>
+            
+                        <div class="row">
+							<a onclick="item(9)">
+                                <div class="col-sm-4">
+                                    <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Avocado Toast Sandwich</h3>
+                                    <p class="description">Cherry tomatoes, roasted red peppers, pine nuts, and arugula on multi-grain toast</p>
+                                </div>
+                                <div class="col-sm-2">
+                                        <h3 class="drink">9.5</h3>
+                                </div>
+							</a>
+							<a onclick="item(10)">
+                                <div class="col-sm-4">
+                                        <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Quinoa and Lentil Wrap</h3>
+                                        <p class="description">Melted spicy Gouda, house baked tofu, sprouts, tomatoes, and spinach</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                            <h3 class="drink">10</h3>
+                                    </div>
+							</a>
+                        </div>
+  
+                            <div class="row">
+								<a onclick="item(11)">
+                                    <div class="col-sm-4">
+                                        <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Hearty Vegetable and Protein Bowl</h3>
+                                        <p class="description">Lentils, butternut squash, roasted tomatoes, avocado, fennel, pan fried mushrooms, pesto, house tofu, sprinkled with sunflower seeds</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                            <h3 class="drink">11</h3>
+                                    </div>
+								</a>
+								<a onclick="item(12)">
+                                    <div class="col-sm-4">
+                                            <h3 data-toggle="tooltip" title="Add to cart!" class="drink">Tahini and Tempeh Grains Bowl</h3>
+                                            <p class="description">Quinoa, couscous, fennel, cucumbers, tomatoes, chopped onion, house tempeh, with drizzled tahini lemon dressing</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                <h3 class="drink">11.5</h3>
+                                        </div>
+								</a>
+                            </div>
+      
+
+        <div style="text-align:center; padding-bottom:10px;">
+            <p>*ALL DAIRY PRODUCTS CAN BE SUBSTITUTED FOR PLANT-BASED PRODUCTS AT NO ADDITIONAL COST</p>
+        </div>
+        <div class="thumb">
+            <i class="fa fa-hand-o-left"></i>
+            <i class="fa fa-hand-o-right"></i> 
+    </div>
+		</div>
+
+        <div class="container3">
+                <img class="img" style="width:100%; height:200px;" src="images/banner1.jpg" alt="foodPic" >
+                <div class="centered" style="color:black">IN A HURRY? ORDER FOR PICKUP </div>
+        </div>
+        <div id="snackbar">Item added to cart!</div>
+    </main>
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2 class="logo"><a href="#"> CAFE FABA </a></h2>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="orderBean.html">Beans</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="about.html">Company Information</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="review.html">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2" style="visibility: hidden;">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="about.html">Company Information</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="review.html">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                        <button type="button" class="btn btn-default">Contact us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy; 2018 Cafe Faba - All Rights Reserved. </p>
+            </div>
+        </footer> 
+		<script>
+	$('.dropdown').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
+    });
+    $('.dropdown').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+    });
+    $('.dropdown .dropdown-menu li').click(function () {
+        $(this).parents('.dropdown').find('span').text($(this).text());
+        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+    });
+	
+	
+	$('.dropdown-menu li').click(function () {
+		var input = $(this).parents('.dropdown').find('input').val();
+		window.open(input,'_self');
+	}); 
+</script>
+</body>
+</html>

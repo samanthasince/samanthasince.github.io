@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ORDER BEAN - CAFE FABA</title>
+    <link rel="stylesheet" href="css/bean.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">Order To Go: 720.555.1212</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="orderBean.html">BEAN</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="coffee.html">COFFEE ART</a></li>
+            <li class="parent"><a href="">ABOUT</a>
+                <ul class="child">
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="review.html">CUSTOMER REVIEW</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li style="float:right; padding-left: 10px"><a class="fa fa-shopping-cart" style="font-size:20px;" href="cart.html"></a></li>
+        </ul>
+    </nav>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="home.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="orderBean.html">BEAN</a>
+    <a href="coffee.html">COFFEE ART </a>
+    <a href="about.html">ABOUT</a>
+    <a href="review.html">REVIEW</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cart.html">CART</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script> 
+    <figure><img height="180" src="images/cafe.png" alt="cafeLogo" width="160"></figure>
+    <header class="container" style="padding-bottom:70px; border-bottom:1px solid silver;">
+        GREAT COFFEE FOR GREATE PEOPLE
+    </header>
+    <main>
+        <div class="container">
+                <div class="row">
+                        <div class="row">
+                            <div class="col-md-9">
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Controls -->
+                                <div class="controls pull-right">
+                                    <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic"
+                                        data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic"
+                                            data-slide="next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="images/colombian.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5>
+                                                                   Colombian Blend Coffee Bean</h5>
+                                                            <h5 class="price-text-color">
+                                                                RM49.99</h5>
+                                                        </div>
+                                                        <div class="rating hidden-sm col-md-6">
+                                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="separator clear-left">
+                                                        <p class="btn-add">
+                                                            <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm">Add to cart</a></p>
+                                                        <p class="btn-details">
+                                                            <i class="fa fa-list"></i><a href="" class="hidden-sm">More details</a></p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="images/choco.jpg" class="img-responsive" alt="a" height="400" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5>
+                                                                    Chocolate Coffee Beans</h5>
+                                                            <h5 class="price-text-color">
+                                                                RM59.99</h5>
+                                                        </div>
+                                                        <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                </i><i class="fa fa-star"></i>
+                                                            </div>
+                                                    </div>
+                                                    <div class="separator clear-left">
+                                                        <p class="btn-add">
+                                                            <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm">Add to cart</a></p>
+                                                        <p class="btn-details">
+                                                            <i class="fa fa-list"></i><a href="" class="hidden-sm">More details</a></p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="images/whole.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5>
+                                                                   Whole Bean Medium Roast Coffee</h5>
+                                                            <h5 class="price-text-color">
+                                                                RM69.99</h5>
+                                                        </div>
+                                                        <div class="rating hidden-sm col-md-6">
+                                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="separator clear-left">
+                                                        <p class="btn-add">
+                                                            <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm">Add to cart</a></p>
+                                                        <p class="btn-details">
+                                                            <i class="fa fa-list"></i><a href="" class="hidden-sm">More details</a></p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="images/oliver.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5>
+                                                                Oliver's Organic Coffee</h5>
+                                                            <h5 class="price-text-color">
+                                                                RM 79.99</h5>
+                                                        </div>
+                                                        <div class="rating hidden-sm col-md-6">
+                                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="separator clear-left">
+                                                        <p class="btn-add">
+                                                            <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm">Add to cart</a></p>
+                                                        <p class="btn-details">
+                                                            <i class="fa fa-list"></i><a href="" class="hidden-sm">More details</a></p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="images/darkroast.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5>
+                                                                Dark Roast Coffee</h5>
+                                                            <h5 class="price-text-color">
+                                                                RM99.99</h5>
+                                                        </div>
+                                                        <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                </i><i class="fa fa-star"></i>
+                                                            </div>
+                                                    </div>
+                                                    <div class="separator clear-left">
+                                                        <p class="btn-add">
+                                                            <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm">Add to cart</a></p>
+                                                        <p class="btn-details">
+                                                            <i class="fa fa-list"></i><a href="" class="hidden-sm">More details</a></p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="images/campos.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5>
+                                                                Campos Superior Blend Coffee Bean</h5>
+                                                            <h5 class="price-text-color">
+                                                                RM149.99</h5>
+                                                        </div>
+                                                        <div class="rating hidden-sm col-md-6">
+                                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                            </i><i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="separator clear-left">
+                                                        <p class="btn-add">
+                                                            <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm">Add to cart</a></p>
+                                                        <p class="btn-details">
+                                                            <i class="fa fa-list"></i><a href="" class="hidden-sm">More details</a></p>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+   
+
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"> CAFE FABA </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="orderBean.html">Beans</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="about.html">Company Information</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2" style="visibility: hidden;">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="about.html">Company Information</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2018 Cafe Faba - All Rights Reserved. </p>
+        </div>
+    </footer> 
+</body>
+</html>

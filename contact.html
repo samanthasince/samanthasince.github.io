@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <title>CONTACT US - CAFE FABA</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">Order To Go: 720.555.1212</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="orderBean.html">BEAN</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="coffee.html">COFFEE ART</a></li>
+            <li class="parent"><a href="">ABOUT</a>
+                <ul class="child">
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="review.html">CUSTOMER REVIEW</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li style="float:right; padding-left: 10px"><a class="fa fa-shopping-cart" style="font-size:20px;" href="cart.html"></a></li>
+        </ul>
+    </nav>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="home.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="orderBean.html">BEAN</a>
+    <a href="coffee.html">COFFEE ART </a>
+    <a href="about.html">ABOUT</a>
+    <a href="review.html">REVIEW</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cart.html">CART</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+    <figure><img height="180" src="images/cafe.png" alt="cafeLogo" width="160"></figure>
+    <header>
+        GREAT COFFEE FOR GREATE PEOPLE
+    </header>
+
+    <div class="container" style="margin-bottom:8%;border-bottom:1px solid silver; padding-bottom:20px;">
+        <h2>CONTACT US</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                    <form>
+                            <h3>Send Message</h3>
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" name="email" placeholder="Email*">
+                            <input style="padding-bottom:170px;" type="text" name="message" placeholder="Message">
+                            <button name="submit" type="submit"><span class="send" >SEND</span></button>
+                    </form>
+            </div>
+           <div class="row">
+                <div class="col-sm-6">
+                    <h4>Questions or Inqiries?</h4>
+                    <p>We love to hear from our customers, so feel free reach out to us about any questions or inquiries that you may have. </p>
+                </div>
+        
+        
+                <div class="col-sm-6">
+                    <h4>Café Faba</h4>
+                    <p>ELM Business School, Damansara Heights</p>
+                    <p>720.555.1212</p>
+                </div>
+        
+       
+                <div class="col-sm-6">
+                    <h4>Hours</h4>
+                    <p>Monday - Friday: 10am - 10pm</p>
+                    <p>Saturday: 8am - 10pm </p>
+                    <p>Sunday: 8am - 10pm</p>
+                </div>
+           </div>
+                
+            
+        </div>
+    </div>
+
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe style="width:100%; height:500px;" id="gmap_canvas" src="https://maps.google.com/maps?q=help%20elm&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+            </iframe>
+            <a href="https://www.emojilib.com"></a>
+        </div>
+        </div>
+
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo" style="border:none;"><a href="#"> CAFE FABA </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="orderBean.html">Beans</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="about.html">Company Information</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2" style="visibility: hidden;">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="about.html">Company Information</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2018 Cafe Faba - All Rights Reserved. </p>
+        </div>
+    </footer> 
+</body>
