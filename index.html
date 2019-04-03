@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" />
+<title>Home - CAFE FABA</title>
+<script> localStorage.clear()</script>
+	<script src="script/menu.js"></script>
+<style>
+
+</style>
+
+</head>
+<body>
+    <div class="header">Order To Go: 720.555.1212</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="orderBean.html">BEAN</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="coffee.html">COFFEE ART</a></li>
+            <li class="parent"><a href="">ABOUT</a>
+                <ul class="child">
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="review.html">CUSTOMER REVIEW</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li style="float:right; padding-left: 10px"><a class="fa fa-shopping-cart" style="font-size:20px;" href="cart.html"></a></li>
+        </ul>
+    </nav>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="home.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="orderBean.html">BEAN</a>
+    <a href="coffee.html">COFFEE ART </a>
+    <a href="about.html">ABOUT</a>
+    <a href="review.html">REVIEW</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cart.html">CART</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+    <figure><img height="180" src="images/cafe.png" alt="cafeLogo" width="160"></figure>
+    <header>
+        GREAT COFFEE FOR GREATE PEOPLE
+    </header>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/making.jpg" alt="" style="width:100%; height:50%;">
+              </div>
+        
+              <div class="item">
+                <img  src="images/sand2.jpeg" alt="" style="width:100%; height:50%;">
+              </div>
+            
+              <div class="item">
+                <img src="images/vienna1.jpeg" alt="" style="width:100%; height:50%;">
+              </div>
+              <div class="item">
+                    <img src="images/plantation.jpg" alt="" style="width:100%; height:50%;">
+                  </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+       <div class="row">
+                  
+                  <div class="col-sm-6" style=" padding:0; margin:0%">
+                            <img src="images/beanss.jpg" alt="" style="width:100%;height:500px;opacity:0.90;"  >
+                            <div class="center">
+                                  Shop Bean
+                                  <a class="alink" href="orderBean.html" >Shop Now</a> 
+                              </div>
+                            
+                          </div>
+                        <div class="col-sm-6" style=" padding:0; margin:0%">
+                                <img src="images/row.jpg" alt=""  style="width:100%;height:500px;"  >
+                                <div class="center">
+                                    View Our Menu
+                                    <a href="menu.html" class="alink" >Menu</a> 
+                                </div>
+                                
+                              </div>
+                              
+                            
+              </div> 
+              <div class="row">
+                      <div class="col-sm-12" style=" padding:0; margin:0%">
+                              <img src="images/holdingcoffee.jpg" alt=""  style="width:100%;height:500px; opacity:0.9;">
+                              <div class="center">
+                                  <div style="text-align:center;font-size:20px;color:white; margin-right:20%;margin-left:20%;">
+                                      <h1>OUR STORY</h1>
+                                         <p style="color:white;">A lot has changed since '63, but our philosophy never has. We're passionate about delivering the best handcrafted products and take pride in the journey from seed to cup.</p> 
+                                  </div>
+                                  <a href="about.html" class="alink" >Learn More</a> 
+                              </div>
+                              
+                            </div>
+              </div>
+              <div class="here"><i class="fa fa-map-marker" aria-hidden="true"></i>WE ARE HERE</div>
+              <div class="mapouter">
+                  <div class="gmap_canvas">
+                      <iframe style="width:100%; height:500px;" id="gmap_canvas" src="https://maps.google.com/maps?q=help%20elm&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+                      </iframe>
+                      <a href="https://www.emojilib.com"></a>
+                  </div>
+                  </div>
+
+              <footer id="myFooter">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-sm-3">
+                              <h2 class="logo"><a href="#"> CAFE FABA </a></h2>
+                          </div>
+                          <div class="col-sm-2">
+                              <h5>Get started</h5>
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="menu.html">Menu</a></li>
+                                  <li><a href="orderBean.html">Beans</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-2">
+                              <h5>About us</h5>
+                              <ul>
+                                  <li><a href="about.html">Company Information</a></li>
+                                  <li><a href="contact.html">Contact us</a></li>
+                                  <li><a href="review.html">Reviews</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-2" style="visibility: hidden;">
+                              <h5>About us</h5>
+                              <ul>
+                                  <li><a href="about.html">Company Information</a></li>
+                                  <li><a href="contact.html">Contact us</a></li>
+                                  <li><a href="review.html">Reviews</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="social-networks">
+                                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                              </div>
+                              <button type="button" class="btn btn-default">Contact us</button>
+                          </div>
+                      </div>
+                  </div>
+				  	<div id="snackbar">Order list cleared...</div>
+					<script>
+					notify();
+					</script>
+                  <div class="footer-copyright">
+                      <p>Copyright &copy; 2018 Cafe Faba - All Rights Reserved. </p>
+                  </div>
+              </footer>   
+  
+</body>
+</html> 
