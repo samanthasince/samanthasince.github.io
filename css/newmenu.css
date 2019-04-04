@@ -464,6 +464,11 @@ nav ul li.parent ul.child li a {
     font-size:22px;
   }
 }
+@media screen and (max-width: 770px) {
+    #myFooter {
+        text-align: center;
+    }
+}
 
 
 html{
